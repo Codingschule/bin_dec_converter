@@ -1,3 +1,4 @@
+#found on https://www.programmieraufgaben.ch/aufgabe/zahlensystemumrechner-dual-binaer-hexadezimal-und-dezimal/wbc93sou
 #!usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -76,16 +77,16 @@ def hex_bin(zahl):
 	return dez_bin(hex_dez(zahl))
 
 print("Zahlensystemumrechner")
-print("1	Binär		->	Dezimal")
-print("2	Binär		->	Hexadezimal")
-print("3	Dezimal		->	Binär")
+print("1	Binaer		->	Dezimal")
+print("2	Binaer		->	Hexadezimal")
+print("3	Dezimal		->	Binaer")
 print("4	Dezimal		-> 	Hexadezimal")
 print("5	Hexadezimal	->	Dezimal")
-print("6	Hexadezimal	->	Binär")
-print("Q	Anwendung schließen")
+print("6	Hexadezimal	->	Binaer")
+print("Q	Anwendung schliessen")
 
 while True:
-	menu = str(input("\nBitte wählen sie: "))
+	menu = str(input("\nBitte waehlen sie: "))
 	
 	if menu == "q" or menu == "Q":
 		quit()
@@ -111,4 +112,4 @@ while True:
 		out = hex_bin(zahl)
 		break
 
-print("\nDas Ergebnis lautet: ", out)
+print("Das Ergebnis lautet: ", out)
